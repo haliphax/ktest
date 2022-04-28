@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../static/jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../static/jacoco-resources/report.gif" type="image/gif"/><title>App.kt</title><link rel="stylesheet" href="../../../static/jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../static/jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ktest</a> &gt; <a href="index.source.html" class="el_package">com.haliphax.ktest</a> &gt; <span class="el_source">App.kt</span></div><h1>App.kt</h1><pre class="source lang-java linenums">package com.haliphax.ktest
+
+// 3rd party
+import io.ktor.server.application.*
+import io.ktor.server.engine.*
+import io.ktor.server.netty.*
+// local
+import com.haliphax.ktest.plugins.*
+
+<span class="nc" id="L10">fun main(args: Array&lt;String&gt;) = EngineMain.main(args)</span>
+
+fun Application.module() {
+<span class="fc" id="L13">	configureAuth()</span>
+<span class="fc" id="L14">	configureRouting()</span>
+<span class="fc" id="L15">	configureSerialization()</span>
+<span class="fc" id="L16">}</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
